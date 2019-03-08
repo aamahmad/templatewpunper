@@ -2538,3 +2538,10 @@ porfolio image hover effects and widget recent post section*/
     left: 50%;
     right: 50%;
 }
+
+.ak-container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
