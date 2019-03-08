@@ -47,6 +47,41 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
+
+
+
+
+<link rel='stylesheet' id='owl-carousel-css'  href='https://demo.accesspressthemes.com/enlighten/wp-content/themes/enlighten/js/owl-carousel/owl.carousel.css?ver=4.9.8' type='text/css' media='all' />
+
+<link rel='stylesheet' id='superfish-css'  href='https://demo.accesspressthemes.com/enlighten/wp-content/themes/enlighten/js/superfish/superfish.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://demo.accesspressthemes.com/enlighten/wp-content/themes/enlighten/js/wow/animate.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='mb-ytplayer-css'  href='https://demo.accesspressthemes.com/enlighten/wp-content/themes/enlighten/js/youtube-video/jquery.mb.YTPlayer.css?ver=4.9.8' type='text/css' media='all' />
+
+
+<script type='text/javascript' src='https://demo.accesspressthemes.com/enlighten/wp-content/plugins/ultimate-form-builder-lite/js/jquery.selectbox-0.2.min.js?ver=1.3.9'></script>
+
+<script type='text/javascript' src='https://demo.accesspressthemes.com/enlighten/wp-content/plugins/ultimate-form-builder-lite/js/frontend.js?ver=1.3.9'></script>
+
+<script type='text/javascript' src='https://demo.accesspressthemes.com/enlighten/wp-content/themes/enlighten/js/youtube-video/jquery.mb.YTPlayer.js?ver=4.9.8'></script>
+
+<script type='text/javascript' src='https://demo.accesspressthemes.com/enlighten/wp-content/themes/enlighten/js/superfish/superfish.js?ver=4.9.8'></script>
+
+<script type='text/javascript' src='https://demo.accesspressthemes.com/enlighten/wp-content/themes/enlighten/js/sticky-sidebar/theia-sticky-sidebar.js?ver=4.9.8'></script>
+
+<script type='text/javascript' src='https://demo.accesspressthemes.com/enlighten/wp-content/themes/enlighten/js/wow/wow.js?ver=4.9.8'></script>
+
+<script type='text/javascript' src='https://demo.accesspressthemes.com/enlighten/wp-content/themes/enlighten/js/bxslider/jquery.bxslider.js?ver=1.8.2'></script>
+
+<script type='text/javascript' src='https://demo.accesspressthemes.com/enlighten/wp-content/themes/enlighten/js/owl-carousel/owl.carousel.js?ver=4.9.8'></script>
+
+<script type='text/javascript' src='https://demo.accesspressthemes.com/enlighten/wp-content/themes/enlighten/js/counter-up/jquery.counterup.js?ver=4.9.8'></script>
+
+<script type='text/javascript' src='https://demo.accesspressthemes.com/enlighten/wp-content/themes/enlighten/js/custom.js?ver=4.9.8'></script>
+
+
+
+
+
     <style>
     .gallery
     {
@@ -55,6 +90,7 @@
     }
     </style>
  
+
 
     <?php wp_head();?>
   </head>

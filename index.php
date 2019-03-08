@@ -309,6 +309,59 @@
 -->
 
 
+<section class="home_section" id="section_client" style="margin-bottom: 10px;">
+  <div class="bg_client clearfix">
+    <div class="ak-container">
+      <div class="client_wrap">
+        
+        <div class="effect_title">
+          <div class="after-effet1"></div>
+            <div class="section_title">
+              <span class="title_one wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">We collaborate with</span>
+              <span class="title_two wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Our Partners</span>
+            </div>
+        </div>
+        
+        <div class="client_cat_loop owl-carousel wow fadeInUp owl-loaded owl-drag" style="visibility: visible; animation-name: fadeInUp;">
+            <div class="owl-stage-outer">
+              <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 991px;">
+                  <div class="owl-item active" style="width: 131.571px; margin-right: 10px;">
+                    <div class="client_image">
+                      <img src="https://demo.accesspressthemes.com/enlighten/wp-content/uploads/2016/05/1-100x100.jpg" alt="Client 7">
+                    </div>
+                  </div>
+
+                  <div class="owl-item active" style="width: 131.571px; margin-right: 10px;">
+                    <div class="client_image">
+                      <img src="https://demo.accesspressthemes.com/enlighten/wp-content/uploads/2016/05/1-100x100.jpg" alt="Client 7">
+                    </div>
+                  </div>
+
+                  <div class="owl-item active" style="width: 131.571px; margin-right: 10px;">
+                    <div class="client_image">
+                      <img src="https://demo.accesspressthemes.com/enlighten/wp-content/uploads/2016/05/1-100x100.jpg" alt="Client 7">
+                    </div>
+                  </div>
+
+                  <div class="owl-item active" style="width: 131.571px; margin-right: 10px;"><div class="client_image">
+                                            <img src="https://demo.accesspressthemes.com/enlighten/wp-content/uploads/2016/05/4.jpg" alt="Client 6">
+                                        </div></div><div class="owl-item active" style="width: 131.571px; margin-right: 10px;"><div class="client_image">
+                                            <img src="https://demo.accesspressthemes.com/enlighten/wp-content/uploads/2016/05/5.jpg" alt="Client 5">
+                                        </div></div><div class="owl-item active" style="width: 131.571px; margin-right: 10px;"><div class="client_image">
+                                            <img src="https://demo.accesspressthemes.com/enlighten/wp-content/uploads/2016/05/l3.jpg" alt="Client 4">
+                                        </div></div><div class="owl-item active" style="width: 131.571px; margin-right: 10px;"><div class="client_image">
+                                            <img src="https://demo.accesspressthemes.com/enlighten/wp-content/uploads/2016/05/2-100x100.jpg" alt="Client 3">
+                                        </div></div><div class="owl-item active" style="width: 131.571px; margin-right: 10px;"><div class="client_image">
+                                            <img src="https://demo.accesspressthemes.com/enlighten/wp-content/uploads/2016/05/7-100x94.jpg" alt="Client 2">
+                                        </div></div><div class="owl-item active" style="width: 131.571px; margin-right: 10px;"><div class="client_image">
+                                            <img src="https://demo.accesspressthemes.com/enlighten/wp-content/uploads/2016/05/6.jpg" alt="Client 1">
+                                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev disabled"><i class="fa fa-angle-left" aria-hidden="true"></i></button><button type="button" role="presentation" class="owl-next disabled"><i class="fa fa-angle-right" aria-hidden="true"></i></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 </div>
