@@ -229,6 +229,7 @@
 
 
   <!--JOURNAL-->
+  <!--s
 <div class="row-container light bg-parallax dark" style="background-color: rgb(62, 66, 69); background-position: 30% 585px; margin-top: 20px; padding-bottom: 20px;">
   <div class="container">
     <div class="row">
@@ -305,6 +306,7 @@
 
   </div>
 </div>
+-->
 
 
 
