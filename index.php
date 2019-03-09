@@ -7,7 +7,7 @@
 
             <!-- Place somewhere in the <body> of your page -->
             <div class="flexslider">
-              <ul class="slides">               
+              <ul class="slides">
                     <?php
                     // loop tampil produk
                         $the_query = new WP_Query(array(
@@ -43,7 +43,7 @@
         <div class="col-md-12">
           <div class="welcome clearfix" style="background: #ddd; margin-left: 0; margin-right: 0;">
               <div class="callout-text" style="align-content: center;">
-              <p style="text-align: center; font-size: 18px">PMB Online Tahun 2018 sudah berakhir. 
+              <p style="text-align: center; font-size: 18px">PMB Online Tahun 2018 sudah berakhir.
                 <a href="https://pendaftaran.sbmptn.ac.id/awal.php" style="color: #fff; background-color:#065139;border-color:#065139" target="_blank" class="btn btn-flat shadow rounded">PMB Online</a>
               </p>
               </div>
@@ -57,7 +57,7 @@
       <div class="container">
         <div class="col-md-3">
           <div class="tw-service-box style-2 left-service">
-            
+
             <div class="tw-service-icon">
               <i class="fa fa-desktop" style="border-style: solid;font-style:normal;text-align:center;font-size:32px;line-height:34px;padding:18px;color:#ffffff;background-color:#065139;border-color:#065139;border-width:2px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;"></i>
             </div>
@@ -72,7 +72,7 @@
 
         <div class="col-md-3">
           <div class="tw-service-box style-2 left-service">
-            
+
             <div class="tw-service-icon">
               <i class="fa fa-file-pdf-o" style="border-style: solid;font-style:normal;text-align:center;font-size:32px;line-height:34px;padding:18px;color:#ffffff;background-color:#065139;border-color:#065139;border-width:2px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;"></i>
             </div>
@@ -87,7 +87,7 @@
 
         <div class="col-md-3">
           <div class="tw-service-box style-2 left-service">
-            
+
             <div class="tw-service-icon">
               <i class="fa fa-users" style="border-style: solid;font-style:normal;text-align:center;font-size:32px;line-height:34px;padding:18px;color:#ffffff;background-color:#065139;border-color:#065139;border-width:2px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;"></i>
             </div>
@@ -102,7 +102,7 @@
 
         <div class="col-md-3">
           <div class="tw-service-box style-2 left-service">
-            
+
             <div class="tw-service-icon">
               <i class="fa fa-graduation-cap" style="border-style: solid;font-style:normal;text-align:center;font-size:32px;line-height:34px;padding:18px;color:#ffffff;background-color:#065139;border-color:#065139;border-width:2px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;"></i>
             </div>
@@ -117,82 +117,183 @@
       </div>
     </div>
 
-  <hr class="style-two">
+<!--  <hr class="style-two"> -->
 
      <!--konten-->
     <div class="row">
       <div class="container">
         <!--produk per kategori-->
-        <?php
-        $categories = get_categories( array(
-            'hide_empty' => false,
-            'order'   => 'DESC',
-            'parent' => 0
-        ));
+        <div class="section notopmargin nobottommargin" style="padding-bottom:40px;">
+        		<div class="container clearfix">
+        			<div class="col-md-4 nobottommargin">
 
-        foreach( $categories as $category ) {
-            $category_link = sprintf( 
-                '<a href="%1$s" alt="%2$s">%3$s</a>',
-                esc_url( get_category_link( $category->term_id ) ),
-                esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ),
-                esc_html( $category->name )
-            );
+        				<div class="heading-block">
+        					<h3>Info TIF</h3>
+        				</div>
 
-            $category_link2 = sprintf( 
-                '<a href="%1$s" alt="%2$s" class="btn btn-primary btn-xs pull-right" >%3$s</a>',
-                esc_url( get_category_link( $category->term_id ) ),
-                esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ),
-                esc_html( 'Lainnya...' )
-            );?>
-        
-          <!-- our-products-area start -->
+        								 	<div class="spost clearfix">
+                    <div class="entry-image">
+                      <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2017/11/Fikri.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2017/11/Fikri.jpg 602w, https://if.unpas.ac.id/wp-content/uploads/2017/11/Fikri-300x200.jpg 300w" sizes="(max-width: 602px) 100vw, 602px"> </a>
+                    </div>
+        				 		<div class="entry-c">
+                      <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/inspiring-story-laporan-ke-format-bukan-alasan-untuk-tidak-lulus-cepat-fikry-andias-praja/">INSPIRING STORY : “Laporan Ke Format Bukan Alasan untuk Tidak Lulus Cepat” – Fikry Andias Praja</a></h5>
+          						<span class="small">23 November 2017</span>
+        				 		</div>
+        				 	</div>
+        			 				 	<div class="spost clearfix">
+                    <div class="entry-image">
+                      <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2017/11/Saesar-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2017/11/Saesar-1.jpg 602w, https://if.unpas.ac.id/wp-content/uploads/2017/11/Saesar-1-300x200.jpg 300w" sizes="(max-width: 602px) 100vw, 602px"> </a>
+                    </div>
+        				 		<div class="entry-c">
+                      <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/inspiring-story-raih-ipk-sempurna-saesar-yustiawan-kuncinya-jangan-menunda-nunda-pekerjaan/">INSPIRING STORY : Raih IPK Sempurna, Saesar Yustiawan : “Kuncinya jangan menunda-nunda pekerjaan”</a></h5>
+          						<span class="small">10 November 2017</span>
+        				 		</div>
+        				 	</div>
+        			 				 	<div class="spost clearfix">
+                    <div class="entry-image">
+                      <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2017/08/Lowongan-Pekerjaan.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2017/08/Lowongan-Pekerjaan.jpg 2539w, https://if.unpas.ac.id/wp-content/uploads/2017/08/Lowongan-Pekerjaan-214x300.jpg 214w, https://if.unpas.ac.id/wp-content/uploads/2017/08/Lowongan-Pekerjaan-768x1079.jpg 768w, https://if.unpas.ac.id/wp-content/uploads/2017/08/Lowongan-Pekerjaan-729x1024.jpg 729w" sizes="(max-width: 2539px) 100vw, 2539px"> </a>
+                    </div>
+        				 		<div class="entry-c">
+                      <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/info-lowongan-pekerjaan/">Info Lowongan Pekerjaan</a></h5>
+          						<span class="small">24 August 2017</span>
+        				 		</div>
+        				 	</div>
+        			 				 	<div class="spost clearfix">
+                    <div class="entry-image">
+                      <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2017/07/RPS-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2017/07/RPS-1.jpg 602w, https://if.unpas.ac.id/wp-content/uploads/2017/07/RPS-1-300x200.jpg 300w" sizes="(max-width: 602px) 100vw, 602px"> </a>
+                    </div>
+        				 		<div class="entry-c">
+                      <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/1779-2/">Workshop RPS (Rencana Pembelajaran Semester) Prodi Teknik Informatika</a></h5>
+          						<span class="small">19 July 2017</span>
+        				 		</div>
+        				 	</div>
+        			 				 	<div class="spost clearfix">
+                    <div class="entry-image">
+                      <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2017/06/Yudisium-5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2017/06/Yudisium-5.jpg 602w, https://if.unpas.ac.id/wp-content/uploads/2017/06/Yudisium-5-300x200.jpg 300w" sizes="(max-width: 602px) 100vw, 602px"> </a>
+                    </div>
+        				 		<div class="entry-c">
+                      <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/75-lulusan-prodi-teknik-informatika-mengikuti-sidang-terbuka-yudisium-periode-20162017/">75 Lulusan Prodi Teknik Informatika mengikuti Sidang terbuka Yudisium Periode 2016/2017</a></h5>
+          						<span class="small">17 June 2017</span>
+        				 		</div>
+        				 	</div>
 
-           <!--welcome-->
+        			</div>
 
 
-          <div class="col-md-12">
-              <div class="widget-item">
+        			<div class="col-md-4 nobottommargin">
 
-                  <h3><?php echo sprintf( esc_html__( '%s', 'textdomain' ), $category_link );?>
-                  <?php echo sprintf( esc_html__( '%s', 'textdomain' ), $category_link2 );?></h3>
-                   
+        				<div class="heading-block">
+        					<h3>Agenda</h3>
+        				</div>
 
-                
-                  <div class="row">
-                  <!-- loop produkbusana -->
-                  <?php
-                  $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' )) : 1;
-                  $kategori = esc_attr( sprintf( __( '%s', 'textdomain' ), $category->slug ));
-                  $nama_kategori = esc_attr( sprintf( __( '%s', 'textdomain' ), $category->name ));
+        								 	<div class="spost clearfix">
+                    <div class="entry-image">
+                      <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2018/04/WhatsApp-Image-2018-03-22-at-3.07.25-PM.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2018/04/WhatsApp-Image-2018-03-22-at-3.07.25-PM.jpeg 1280w, https://if.unpas.ac.id/wp-content/uploads/2018/04/WhatsApp-Image-2018-03-22-at-3.07.25-PM-150x150.jpeg 150w, https://if.unpas.ac.id/wp-content/uploads/2018/04/WhatsApp-Image-2018-03-22-at-3.07.25-PM-300x300.jpeg 300w, https://if.unpas.ac.id/wp-content/uploads/2018/04/WhatsApp-Image-2018-03-22-at-3.07.25-PM-768x768.jpeg 768w, https://if.unpas.ac.id/wp-content/uploads/2018/04/WhatsApp-Image-2018-03-22-at-3.07.25-PM-1024x1024.jpeg 1024w, https://if.unpas.ac.id/wp-content/uploads/2018/04/WhatsApp-Image-2018-03-22-at-3.07.25-PM-250x250.jpeg 250w, https://if.unpas.ac.id/wp-content/uploads/2018/04/WhatsApp-Image-2018-03-22-at-3.07.25-PM-45x45.jpeg 45w" sizes="(max-width: 1280px) 100vw, 1280px"> </a>
+                    </div>
+        				 		<div class="entry-c">
+                      <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/agenda/it-phoria-start-up-challenge-start-your-future-in-the-era-of-industry-4-0/">IT Phoria Start Up Challenge – Start Your Future In The Era Of Industry 4.0</a></h5>
+          						<span class="small">15 March 2018</span>
+        				 		</div>
+        				 	</div>
+        			 				 	<div class="spost clearfix">
+                    <div class="entry-image">
+                      <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2017/08/WhatsApp-Image-2017-08-29-at-19.15.57.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2017/08/WhatsApp-Image-2017-08-29-at-19.15.57.jpeg 1240w, https://if.unpas.ac.id/wp-content/uploads/2017/08/WhatsApp-Image-2017-08-29-at-19.15.57-150x150.jpeg 150w, https://if.unpas.ac.id/wp-content/uploads/2017/08/WhatsApp-Image-2017-08-29-at-19.15.57-300x300.jpeg 300w, https://if.unpas.ac.id/wp-content/uploads/2017/08/WhatsApp-Image-2017-08-29-at-19.15.57-768x768.jpeg 768w, https://if.unpas.ac.id/wp-content/uploads/2017/08/WhatsApp-Image-2017-08-29-at-19.15.57-1024x1024.jpeg 1024w, https://if.unpas.ac.id/wp-content/uploads/2017/08/WhatsApp-Image-2017-08-29-at-19.15.57-250x250.jpeg 250w, https://if.unpas.ac.id/wp-content/uploads/2017/08/WhatsApp-Image-2017-08-29-at-19.15.57-45x45.jpeg 45w" sizes="(max-width: 1240px) 100vw, 1240px"> </a>
+                    </div>
+        				 		<div class="entry-c">
+                      <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/agenda/born-to-protect-chapter-2-teknik-informatika-unpas-di-tunjuk-jadi-penyelenggara/">Born to Protect Chapter 2, Teknik Informatika UNPAS di Tunjuk Jadi Penyelenggara</a></h5>
+          						<span class="small">30 August 2017</span>
+        				 		</div>
+        				 	</div>
+        			 				 	<div class="spost clearfix">
+                    <div class="entry-image">
+                      <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2017/04/WhatsApp-Image-2017-04-05-at-13.36.47.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2017/04/WhatsApp-Image-2017-04-05-at-13.36.47.jpeg 600w, https://if.unpas.ac.id/wp-content/uploads/2017/04/WhatsApp-Image-2017-04-05-at-13.36.47-225x300.jpeg 225w" sizes="(max-width: 600px) 100vw, 600px"> </a>
+                    </div>
+        				 		<div class="entry-c">
+                      <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/agenda/photography-competition-it-fun-to-be-advanced/">Photography Competition – It fun, to be advanced</a></h5>
+          						<span class="small">5 April 2017</span>
+        				 		</div>
+        				 	</div>
+        			 				 	<div class="spost clearfix">
+                    <div class="entry-image">
+                      <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2016/10/calendar-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2016/10/calendar-1.jpg 380w, https://if.unpas.ac.id/wp-content/uploads/2016/10/calendar-1-150x150.jpg 150w, https://if.unpas.ac.id/wp-content/uploads/2016/10/calendar-1-300x300.jpg 300w, https://if.unpas.ac.id/wp-content/uploads/2016/10/calendar-1-250x250.jpg 250w" sizes="(max-width: 380px) 100vw, 380px"> </a>
+                    </div>
+        				 		<div class="entry-c">
+                      <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/agenda/it-phoria-start-up-challenge-connect-the-future-with-app/">IT Phoria Start Up Challenge – Connect The Future With App</a></h5>
+          						<span class="small">4 October 2016</span>
+        				 		</div>
+        				 	</div>
+        			 				 	<div class="spost clearfix">
+                    <div class="entry-image">
+                      <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2016/10/img6.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2016/10/img6.jpg 640w, https://if.unpas.ac.id/wp-content/uploads/2016/10/img6-300x225.jpg 300w" sizes="(max-width: 640px) 100vw, 640px"> </a>
+                    </div>
+        				 		<div class="entry-c">
+                      <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/agenda/it-phoria-the-spirit-of-young-it-prenuer-to-develop-national-creative-econom/">IT Phoria – The Spirit of Young IT Prenuer to Develop National Creative Econom</a></h5>
+          						<span class="small">4 October 2016</span>
+        				 		</div>
+        				 	</div>
 
-                  $args = array(
-                    'posts_per_page' => 10,
-                    'paged' => $paged,
-                    'category_name' => $kategori,
-                  );
+        			</div>
 
-                  $the_query = new WP_Query( $args );?>
+        			<div class="col-md-4 nobottommargin">
+                  <div class="heading-block">
+                    <h3>Artikel</h3>
+                  </div>
 
-                  <?php 
-                  if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-                    <?php get_template_part('content', get_post_format() );?>
-
-                  <?php endwhile; endif; wp_reset_postdata();?>
-                  <!-- loop produkbusana end -->
-                </div>       
-              </div>
-          </div>
-          <!-- our-products-area end -->
-          <?php
-        }?>
+                    				 	<div class="spost clearfix">
+                      <div class="entry-image">
+                        <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2018/07/Android-P-orange.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2018/07/Android-P-orange.png 1125w, https://if.unpas.ac.id/wp-content/uploads/2018/07/Android-P-orange-300x197.png 300w, https://if.unpas.ac.id/wp-content/uploads/2018/07/Android-P-orange-768x504.png 768w, https://if.unpas.ac.id/wp-content/uploads/2018/07/Android-P-orange-1024x672.png 1024w" sizes="(max-width: 1125px) 100vw, 1125px"> </a>
+                      </div>
+          				 		<div class="entry-c">
+                        <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/artikel/google-akhirnya-resmi-meriliskan-versi-beta-final-untuk-android-p/">Google akhirnya resmi meriliskan versi beta final untuk Android P</a></h5>
+            						<span class="small">28 July 2018</span>
+          				 		</div>
+          				 	</div>
+          			   				 	<div class="spost clearfix">
+                      <div class="entry-image">
+                        <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2018/07/laptops-database_1158117321-e1532152340373.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2018/07/laptops-database_1158117321-e1532152340373.jpg 479w, https://if.unpas.ac.id/wp-content/uploads/2018/07/laptops-database_1158117321-e1532152340373-300x200.jpg 300w" sizes="(max-width: 479px) 100vw, 479px"> </a>
+                      </div>
+          				 		<div class="entry-c">
+                        <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/artikel/bagaimana-cara-menjaga-keamanan-database/">Bagaimana Cara Menjaga Keamanan Database?</a></h5>
+            						<span class="small">21 July 2018</span>
+          				 		</div>
+          				 	</div>
+          			   				 	<div class="spost clearfix">
+                      <div class="entry-image">
+                        <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2018/01/Wordpress.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2018/01/Wordpress.jpg 602w, https://if.unpas.ac.id/wp-content/uploads/2018/01/Wordpress-300x200.jpg 300w" sizes="(max-width: 602px) 100vw, 602px"> </a>
+                      </div>
+          				 		<div class="entry-c">
+                        <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/artikel/membuat-website-sederhana-dengan-cms-wordpress/">Membuat Website Sederhana dengan CMS WordPress</a></h5>
+            						<span class="small">16 January 2018</span>
+          				 		</div>
+          				 	</div>
+          			   				 	<div class="spost clearfix">
+                      <div class="entry-image">
+                        <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2018/01/Artikel-amel5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2018/01/Artikel-amel5.jpg 602w, https://if.unpas.ac.id/wp-content/uploads/2018/01/Artikel-amel5-300x200.jpg 300w" sizes="(max-width: 602px) 100vw, 602px"> </a>
+                      </div>
+          				 		<div class="entry-c">
+                        <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/artikel/trend-digital-ulasan-aplikasi-yang-meringankan-aktivitas-harian/">Trend Digital, Ulasan Aplikasi yang meringankan aktivitas harian</a></h5>
+            						<span class="small">9 January 2018</span>
+          				 		</div>
+          				 	</div>
+          			   				 	<div class="spost clearfix">
+                      <div class="entry-image">
+                        <a href=""><img src="https://if.unpas.ac.id/wp-content/uploads/2017/06/Liburan-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://if.unpas.ac.id/wp-content/uploads/2017/06/Liburan-4.jpg 602w, https://if.unpas.ac.id/wp-content/uploads/2017/06/Liburan-4-300x200.jpg 300w" sizes="(max-width: 602px) 100vw, 602px"> </a>
+                      </div>
+          				 		<div class="entry-c">
+                        <h5 class="nobottommargin"><a href="https://if.unpas.ac.id/artikel/trend-digital-marketing-di-era-technology/">Trend Digital Marketing di Era Technology</a></h5>
+            						<span class="small">6 June 2017</span>
+          				 		</div>
+          				 	</div>
+          			 			</div>
+        		</div>
+        	</div>
 
         <div class="col-md-12">
           <div class="widget-item">
-            <h3>Gallery 
-            <a href="http://appunper.xyz/gallery/" class="btn btn-primary btn-xs pull-right">View more gallery</a> 
+            <h3>Gallery
+            <a href="http://appunper.xyz/gallery/" class="btn btn-primary btn-xs pull-right">View more gallery</a>
             </h3>
-            <section class="gallery no-gutter">          
+            <section class="gallery no-gutter">
               <div class="row">
                 <?php
                 // loop tampil produk
@@ -214,11 +315,11 @@
                     ?>
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
-                <?php endif; ?>       
-          
+                <?php endif; ?>
+
               </div>
               <div class="col-xs-12">
-                 
+
               </div>
             </section>
           </div>
@@ -313,7 +414,7 @@
   <div class="bg_client clearfix">
     <div class="ak-container">
       <div class="client_wrap">
-        
+
         <div class="effect_title">
           <div class="after-effet1"></div>
             <div class="section_title">
@@ -321,7 +422,7 @@
               <span class="title_two wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Our Partners</span>
             </div>
         </div>
-        
+
         <div class="client_cat_loop owl-carousel wow fadeInUp owl-loaded owl-drag" style="visibility: visible; animation-name: fadeInUp;">
             <div class="owl-stage-outer">
               <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 991px;">
@@ -361,6 +462,8 @@
     </div>
   </div>
 </section>
+
+<?php // include(dirname(__FILE__) . "/content-listartikel.php"); ?>
 
 
 
