@@ -60,7 +60,6 @@
             if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
               <?php get_template_part('content', get_post_format() );?>
-              <?php echo sprintf( esc_html__( '%s', 'textdomain' ), $category_link2 );?>
             <?php endwhile; endif; wp_reset_postdata();?>
             <!-- loop end -->
 
