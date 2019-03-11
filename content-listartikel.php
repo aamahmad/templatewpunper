@@ -9,8 +9,8 @@
           <?php
           $categories = get_categories( array(
               'hide_empty' => false,
-              'order'   => 'DESC',
-              'orderby' => 'post_date',
+              'order'   => 'ASC',
+              'orderby' => 'ID',
               'parent' => 0,
           ));
           foreach( $categories as $category ) {
