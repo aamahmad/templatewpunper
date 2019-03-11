@@ -32,9 +32,6 @@
             <!--welcome-->
 
 
-
-
-
           <div class="col-md-4 nobottommargin">
 
             <div class="heading-block">

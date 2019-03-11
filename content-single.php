@@ -6,10 +6,6 @@
 			<span class="date"><?php the_date('j F Y', '', ''); ?> | oleh : <?php the_author(); ?></span>
 
 			<div class="post"> 
-			
-			<?php if ( has_post_thumbnail() ) { ?>
-				<img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" style="max-width: 100%;"> 	
-			<?php } ?>
 			<p><?php the_content(); ?></p>
 
 			</div> 		
