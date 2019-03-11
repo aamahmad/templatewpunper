@@ -9,7 +9,7 @@
           <?php
           $categories = get_categories( array(
               'hide_empty' => false,
-              'order'   => 'ASC',
+              'order'   => 'DESC',
               'orderby' => 'post_date',
               'parent' => 0,
           ));
