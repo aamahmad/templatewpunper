@@ -1,4 +1,4 @@
-<?php 
+<?php
 // WordPress Titles
 add_theme_support( 'title-tag' );
 
@@ -25,8 +25,8 @@ add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 add_action('admin_menu', function() {
     add_options_page( 'Kontak Info', 'Kontak Info', 'manage_options', 'my-awesome-plugin', 'my_awesome_plugin_page' );
 });
- 
- 
+
+
 add_action( 'admin_init', function() {
     register_setting( 'my-awesome-plugin-settings', 'map_option_1' );
     register_setting( 'my-awesome-plugin-settings', 'map_option_2' );
@@ -34,13 +34,13 @@ add_action( 'admin_init', function() {
     register_setting( 'my-awesome-plugin-settings', 'map_option_4' );
     register_setting( 'my-awesome-plugin-settings', 'map_option_5' );
 });
- 
- 
+
+
 function my_awesome_plugin_page() {
   ?>
     <div class="wrap">
       <form action="options.php" method="post">
- 
+
         <?php
           settings_fields( 'my-awesome-plugin-settings' );
           do_settings_sections( 'my-awesome-plugin-settings' );
@@ -67,13 +67,13 @@ function my_awesome_plugin_page() {
                 <th>Teks Footer</th>
                 <td><textarea placeholder="Email" name="map_option_4" rows="5" cols="100"><?php echo esc_attr( get_option('map_option_4') ); ?></textarea></td>
             </tr>
-            
+
             <tr>
                 <td><?php submit_button(); ?></td>
             </tr>
- 
+
         </table>
- 
+
       </form>
     </div>
   <?php
@@ -96,15 +96,15 @@ add_action( 'init', 'wpb_custom_new_menu' );
 // Menu Link Halaman
 function create_menu_link_halaman( $theme_location ) {
     if ( ($theme_location) && ($locations = get_nav_menu_locations()) && isset($locations[$theme_location]) ) {
-         
+
 
         $menu = get_term( $locations[$theme_location], 'nav_menu' );
         $menu_items = wp_get_nav_menu_items($menu->term_id);
 
-          
+
         foreach( $menu_items as $menu_item ) {
             if( $menu_item->menu_item_parent == 0 ) {
-                 
+
                 $parent = $menu_item->ID;
                  $class = esc_attr( implode( ' ', apply_filters( 'nav_menu_css_class', array_filter( $menu_item->classes ), $menu_item) ) );
                 $menu_array = array();
@@ -115,30 +115,30 @@ function create_menu_link_halaman( $theme_location ) {
                     }
                 }
                 if( $bool == true && count( $menu_array ) > 0 ) {
-                    
+
                    $menu_list .= '<li><a href="http://www.umy.ac.id" title="Web UMY"><i class="fa ' .  $class . '"></i> &nbsp;' ."\n";
                    $menu_list .= '<span>' . $menu_item->title . '</span' ."";
                    $menu_list .= implode( "", $menu_array );
                    $menu_list .= '</a></li>' ."\n";
-                     
+
                 } else {
-                     
+
                     $menu_list .= '<li><a href="' . $menu_item->url . '" title="' . $menu_item->title . '"><i class="fa ' .  $class . '"></i> &nbsp;' ."";
                     $menu_list .= '' . $menu_item->title . '' ."";
                     $menu_list .= '</a></li>' ."\n";
 
                 }
-                 
+
             }
-             
+
             // end <li>
         }
 
-  
+
     } else {
         $menu_list = '<!-- no menu defined in location "'.$theme_location.'" -->';
     }
-     
+
     echo $menu_list;
 }
 
@@ -146,16 +146,16 @@ function create_menu_link_halaman( $theme_location ) {
 // Menu Link Utama
 function create_menu_link_utama( $theme_location ) {
     if ( ($theme_location) && ($locations = get_nav_menu_locations()) && isset($locations[$theme_location]) ) {
-         
+
 
         $menu = get_term( $locations[$theme_location], 'nav_menu' );
         $menu_items = wp_get_nav_menu_items($menu->term_id);
-          
+
         foreach( $menu_items as $menu_item ) {
             if( $menu_item->menu_item_parent == 0 ) {
-                 
+
                 $parent = $menu_item->ID;
-                 
+
                 $menu_array = array();
                 foreach( $menu_items as $submenu ) {
                     if( $submenu->menu_item_parent == $parent ) {
@@ -164,31 +164,31 @@ function create_menu_link_utama( $theme_location ) {
                     }
                 }
                 if( $bool == true && count( $menu_array ) > 0 ) {
-                     
+
                    $menu_list .= '<li><a title="Profil" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">' ."";
                    $menu_list .= '' . $menu_item->title . '<span class="caret"></span></a>' ."\n";
                    $menu_list .= '<ul role="menu" class="dropdown-menu">' ."\n";
                    $menu_list .= implode( "", $menu_array );
                    $menu_list .= '</ul></li>' ."\n";
-                     
+
                 } else {
-                     
+
                     $menu_list .= '<li><a href="' . $menu_item->url . '" title="' . $menu_item->title . '">' ."";
                     $menu_list .= '' . $menu_item->title . '' ."";
                     $menu_list .= '</a></li>' ."\n";
 
                 }
-                 
+
             }
-             
+
             // end <li>
         }
 
-  
+
     } else {
         $menu_list = '<!-- no menu defined in location "'.$theme_location.'" -->';
     }
-     
+
     echo $menu_list;
 }
 
@@ -202,13 +202,13 @@ $args = array(
       'add_new'    => __( 'Tambah baru'),
       'add_new_item' => __( 'Tambah Slider Baru'),
     ),
-    'show_ui' => true, 
-    'show_in_menu' => true, 
+    'show_ui' => true,
+    'show_in_menu' => true,
     'capability_type' => 'post',
-    'has_archive' => true, 
+    'has_archive' => true,
     'menu_icon'  => 'dashicons-images-alt2',
     'supports' => array('title')
-); 
+);
 register_post_type('slider',$args);
 
 // Tambahan isian di custome post type Slider
@@ -335,13 +335,13 @@ $args = array(
       'add_new'    => __( 'Tambah baru'),
       'add_new_item' => __( 'Tambah Gallery Baru'),
     ),
-    'show_ui' => true, 
-    'show_in_menu' => true, 
+    'show_ui' => true,
+    'show_in_menu' => true,
     'capability_type' => 'post',
-    'has_archive' => true, 
+    'has_archive' => true,
     'menu_icon'  => 'dashicons-images-alt2',
     'supports' => array('title')
-); 
+);
 register_post_type('gallery',$args);
 
 function gallery( $meta_boxes ) {
@@ -416,3 +416,68 @@ function gallery( $meta_boxes ) {
   return $meta_boxes;
 }
 add_filter( 'rwmb_meta_boxes', 'gallery' );
+
+
+// CUSTOME POST Kolaborasi
+$args = array(
+    'public' => true,
+    'publicly_queryable' => true,
+    'labels'       => array(
+      'name'       => __( 'Kolaborasi' ),
+      'add_new'    => __( 'Tambah baru'),
+      'add_new_item' => __( 'Tambah Gambar Kolaborasi'),
+    ),
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'capability_type' => 'post',
+    'has_archive' => true,
+    'menu_icon'  => 'dashicons-images-alt2',
+    'supports' => array('title')
+);
+register_post_type('kolaborasi',$args);
+
+// Tambahan isian di custome post type Slider
+function kolaborasi_meta_box( $meta_boxes ) {
+  $prefix = 'kolaborasi-';
+
+  $meta_boxes[] = array(
+    'id' => 'kolaborasi',
+    'title' => esc_html__( 'Kolaborasi', 'metabox-online-generator' ),
+    'post_types' => array( 'kolaborasi' ),
+    'context' => 'advanced',
+    'priority' => 'default',
+    'autosave' => false,
+    'fields' => array(
+      array(
+        'id' => $prefix . 'radio_5',
+        'name' => esc_html__( 'Tampilkan', 'metabox-online-generator' ),
+        'type' => 'radio',
+        'desc' => esc_html__( 'Tampilkan kolaborasi', 'metabox-online-generator' ),
+        'placeholder' => '',
+        'options' => array(
+          1 => 'Tampilkan',
+          'Tidak ditampilkan',
+        ),
+        'inline' => true,
+        'std' => '2',
+      ),
+      array(
+        'id' => $prefix . 'image_advanced_bg',
+        'type' => 'image_advanced',
+        'name' => esc_html__( 'Gambar Slider', 'metabox-online-generator' ),
+        'desc' => esc_html__( 'gambar Slider header', 'metabox-online-generator' ),
+        'max_file_uploads' => '1',
+      ),
+      array(
+        'id' => $prefix . 'linktujuan',
+        'type' => 'text',
+        'name' => esc_html__( 'Link Tujuan', 'metabox-online-generator' ),
+        'desc' => esc_html__( 'Link Ke Tujuan Konten', 'metabox-online-generator' ),
+        'placeholder' => esc_html__( 'http://', 'metabox-online-generator' ),
+      ),
+    ),
+  );
+
+  return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'kolaborasi_meta_box' );
