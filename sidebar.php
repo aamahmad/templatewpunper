@@ -9,7 +9,7 @@
 				}
 			?>
 		</h3>
-		
+
 		<nav>
 			<ul>
 
@@ -41,7 +41,7 @@
 
 				<li class="normal">
 					<a style="font-weight: 600;" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-          <span class="date"><?php the_date('j F Y', '', ''); ?> | oleh : <?php the_author(); ?></span>
+          <span class="date"><?php echo get_the_date('j F Y', '', ''); ?> | oleh : <?php the_author(); ?></span>
 				</li>
 
 				<?php
