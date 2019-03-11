@@ -5,6 +5,7 @@
     $categories = get_categories( array(
         'hide_empty' => false,
         'order'   => 'DESC',
+        'orderby' = 'post_date'
         'parent' => 0
     ));
 

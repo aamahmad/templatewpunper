@@ -55,7 +55,7 @@
     <!--program -->
     
 
-<!--  <hr class="style-two"> -->
+    <!--  <hr class="style-two"> -->
 
      <!--konten-->
     <div class="row">
